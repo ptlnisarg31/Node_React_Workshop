@@ -1,5 +1,5 @@
 NodeExpress_Server/node_modules/*
 Backend_MongoDB/node_modules/*
 Frontend_React/frontend/node_modules/*
-Frontend_React/frontend/*
-Backend_MongoDB/*
+# Frontend_React/frontend/*
+# Backend_MongoDB/*
