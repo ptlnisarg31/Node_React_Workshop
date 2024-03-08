@@ -12,6 +12,13 @@ Steps :
 ```
 install nodemon : npm install nodemon -g
 to run : nodemon filename.js
+// Nodemon is used for auto restarting the server when any changes are made
+
+install express : npm i express
+
+
+to clean cache : npm cache clean --force
+
 ```
 
 Good Packages :
