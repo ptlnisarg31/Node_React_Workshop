@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <div id="msg"></div>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="saveData()">Save</button>
+    <button onclick="getData()">Get</button>
+    <button onclick="removeData()">Remove</button>
+    <script>
+        function saveData() {
+            var nameValue = document.getElementById('name').value;
+            var dataObject = {'id': 1, 'name': nameValue, 'age':25, 'email':'Why@mail.com'};
+            var jsonData = JSON.stringify(dataObject);
+            localStorage.setItem('data', jsonData);
+        }
+
+        function getData() {
+            var jsonData = localStorage.getItem('data');
+            if(jsonData) {
+                var dataObject = JSON.parse(jsonData);
+                document.getElementById('msg').innerHTML = 'Name: ' + dataObject.name + '<br>' +
+                    'Age: ' + dataObject.age + '<br>' +
+                    'Email: ' + dataObject.email;
+            } else {
+                document.getElementById('msg').innerHTML = 'No data found';
+            }
+        }
+
+        function removeData() {
+            localStorage.removeItem('data');
+            localStorage.clear();
+            document.getElementById('msg').innerHTML = 'Data removed';
+        }
+    </script>
+</body>
+</html>
