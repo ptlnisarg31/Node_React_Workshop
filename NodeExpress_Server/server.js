@@ -6,4 +6,4 @@ http.createServer(function (req, res) {
     res.write(`A value is ${a} and B value is ${b} and sum is ${a+b} </br>`);
     res.end('Bye ! Response is ended here');
 }).listen(3000);
-console.log("Server running at http://localhost:3000/");
+console.log("Server running at 3000 => http://localhost:3000/");

@@ -5,3 +5,29 @@
 3. Local Modules : Created by us
 4. Third Party Modules : npm install <module_name>
 ```
+
+
+Steps :
+
+```
+install nodemon : npm install nodemon -g
+to run : nodemon filename.js
+```
+
+Good Packages :
+
+```
+Nodemon
+nodemailer
+mongoose
+express-session
+express-fileupload
+dotenv
+body-parser
+morgan
+cors
+bcrypt
+jwt
+socket.io
+swagger
+```
